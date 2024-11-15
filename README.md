@@ -7,7 +7,7 @@
 - If you have a Nvidia GPU = uncomment the first line and delete the second. (Will run a lot faster).
 - If you dont = leave as is.
 
-
+<br>
 3) Run **"docker build -t project2 ."** in the directory.
 
 
