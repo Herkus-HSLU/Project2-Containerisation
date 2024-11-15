@@ -1,6 +1,6 @@
 # Project2-Containerisation
 
-**Steps for setup**
+## **Steps for setup**
 <br>
 
 1) Clone the repo.
@@ -24,7 +24,7 @@
 - If the command doesnt work you can also try replacing **"C:/Users/{USERNAME}/{REPONAME}":/workspace"** with **"$(pwd):/workspace"**
 <br>
 
-**Hyperparameters:**
+## **Hyperparameters:**
 - --max_seq_length
 - --train_batch_size
 - --eval_batch_size
@@ -37,6 +37,6 @@
 <br>
 
 
-**Example Usage:**
+## **Example Usage:**
 <br>
 docker run --rm -v "C:/Users/herkus/Desktop/Project":/workspace -e WANDB_API_KEY=adwuin891randomt12uibadjksadkjwu21 project2-containerisation-image --help --learning_rate 5e-8 --eval_batch_size 16 --train_batch_size 16 --run_name localTest
