@@ -15,8 +15,8 @@
 <br>
 
 5) To run it use the following command:
-- If you used the Nvidia method = **"docker run --rm --gpus all -v "C:/Users/{USERNAME}/{REPONAME}":/workspace -e WANDB_API_KEY={YOURAPIKEYHERE} project2-containerisation-image --help"**
-- If you didn't use it = **"docker run --rm -v "C:/Users/{USERNAME}/{REPONAME}":/workspace -e WANDB_API_KEY={YOURAPIKEYHERE} project2-containerisation-image --help"**
+- If you used the Nvidia method <br>**"docker run --rm --gpus all -v "C:/Users/{USERNAME}/{REPONAME}":/workspace -e WANDB_API_KEY={YOURAPIKEYHERE} project2-containerisation-image --help"**
+- If you didn't use it <br>**"docker run --rm -v "C:/Users/{USERNAME}/{REPONAME}":/workspace -e WANDB_API_KEY={YOURAPIKEYHERE} project2-containerisation-image --help"**
 - These will print a list of arguments you can pass in. If no arguments are given it will run with **default** values.
 <br>
 
