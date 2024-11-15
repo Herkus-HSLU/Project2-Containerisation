@@ -1,5 +1,8 @@
 # Project2-Containerisation
 
+**Steps for setup**
+<br>
+
 1) Clone the repo.
 <br>
 
