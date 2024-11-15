@@ -8,8 +8,12 @@
 
 3) Run **docker build -t project2 .** in the directory.
 
-4) To run it use the following **docker run --rm -v "C:/Users/{USERNAME}/{REPONAME}":/workspace -e WANDB_API_KEY={YOURAPIKEYHERE} project2-containerisation-image --help
-- This will print a list of arguments you can pass in.
+4) To run it use the following command:
+- If you used the Nvidia method = **docker run --rm --gpus all -v "C:/Users/{USERNAME}/{REPONAME}":/workspace -e WANDB_API_KEY={YOURAPIKEYHERE} project2-containerisation-image --help**
+- If you didn't = **docker run --rm -v "C:/Users/{USERNAME}/{REPONAME}":/workspace -e WANDB_API_KEY={YOURAPIKEYHERE} project2-containerisation-image --help**
+- These will print a list of arguments you can pass in. If no arguments are given it will run with **default** values.
+
+__If the command doesnt work you can also try replacing **"C:/Users/{USERNAME}/{REPONAME}":/workspace** with **$(pwd):/workspace**__
 
 example usage:
-**docker run --rm -v "C:/Users/{USERNAME}/{REPONAME}":/workspace -e WANDB_API_KEY={YOURAPIKEYHERE} project2-containerisation-image --help --learning_rate 5e-8 --eval_batch_size 16 --train_batch_size 16 --run_name localTest**
+docker run --rm -v "C:/Users/{USERNAME}/{REPONAME}":/workspace -e WANDB_API_KEY={YOURAPIKEYHERE} project2-containerisation-image --help --learning_rate 5e-8 --eval_batch_size 16 --train_batch_size 16 --run_name localTest
