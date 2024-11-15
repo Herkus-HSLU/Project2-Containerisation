@@ -18,11 +18,10 @@
 - If you used the Nvidia method: <br>**"docker run --rm --gpus all -v "C:/Users/{USERNAME}/{REPONAME}":/workspace -e WANDB_API_KEY={YOURAPIKEYHERE} project2-containerisation-image --help"**
 - If you didn't use it: <br>**"docker run --rm -v "C:/Users/{USERNAME}/{REPONAME}":/workspace -e WANDB_API_KEY={YOURAPIKEYHERE} project2-containerisation-image --help"**
 - These will print a list of arguments you can pass in. If no arguments are given it will run with **default** values.
+- If the command doesnt work you can also try replacing **"C:/Users/{USERNAME}/{REPONAME}":/workspace"** with **"$(pwd):/workspace"**
 <br>
 
-If the command doesnt work you can also try replacing **"C:/Users/{USERNAME}/{REPONAME}":/workspace"** with **"$(pwd):/workspace"**
 
-
-<ins> Example Usage: </ins>
+**Example Usage:**
 <br>
 docker run --rm -v "C:/Users/herkus/Desktop/Project":/workspace -e WANDB_API_KEY=adwuin891randomt12uibadjksadkjwu21 project2-containerisation-image --help --learning_rate 5e-8 --eval_batch_size 16 --train_batch_size 16 --run_name localTest
