@@ -21,6 +21,17 @@
 - If the command doesnt work you can also try replacing **"C:/Users/{USERNAME}/{REPONAME}":/workspace"** with **"$(pwd):/workspace"**
 <br>
 
+**Hyperparameters:**
+- --max_seq_length
+- --train_batch_size
+- --eval_batch_size
+- --learning_rate
+- --warmup_steps
+- --weight_decay
+- --epochs
+- --checkpoint_dir
+- --run_name
+
 
 **Example Usage:**
 <br>
